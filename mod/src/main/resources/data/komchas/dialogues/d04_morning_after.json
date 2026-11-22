@@ -1,0 +1,33 @@
+{
+  "once": true,
+  "lines": [
+    {
+      "speaker": "sonya",
+      "text": "Что он сказал?",
+      "kind": "say",
+      "delay": 60
+    },
+    {
+      "speaker": "veta",
+      "text": "«Он»? Кто «он»? Ты сказала «он».",
+      "kind": "say"
+    },
+    {
+      "speaker": "sonya",
+      "text": "Ну... голос же. Какая разница. Не цепляйся к словам, Вет.",
+      "kind": "say"
+    },
+    {
+      "speaker": "veta",
+      "text": "Она сказала «он». Не «оно». Не «кто-то». Она знает, о ком речь.",
+      "kind": "think",
+      "delay": 140
+    }
+  ],
+  "trigger": {
+    "day": 4,
+    "from": 100,
+    "to": 1500,
+    "zone": "flat"
+  }
+}

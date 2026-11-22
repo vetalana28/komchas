@@ -1,0 +1,16 @@
+# Моды из Silence in Head, которые НЕ нужны нашей сборке (монстры и оформление чужого сюжета).
+# Строка совпадает, если она входит в имя файла (без учёта регистра). Строки с # пропускаются.
+stalker
+cave_dweller
+cavedweller
+mimic
+apollyon
+assimilated
+dweller
+whisper
+eerie
+fancymenu
+drippy
+konkrete
+melody
+rpc

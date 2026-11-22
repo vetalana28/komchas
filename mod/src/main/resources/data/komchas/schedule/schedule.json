@@ -1,0 +1,98 @@
+{
+  "events": [
+    {
+      "day": 1,
+      "from": 3600,
+      "to": 5400,
+      "title": "ОБЖ",
+      "zone": "college",
+      "type": "class"
+    },
+    {
+      "day": 2,
+      "from": 1500,
+      "to": 5500,
+      "title": "Пары",
+      "zone": "college",
+      "type": "class"
+    },
+    {
+      "day": 3,
+      "from": 1500,
+      "to": 5500,
+      "title": "Пары",
+      "zone": "college",
+      "type": "class"
+    },
+    {
+      "day": 4,
+      "from": 1500,
+      "to": 5500,
+      "title": "Пары",
+      "zone": "college",
+      "type": "class"
+    }
+  ],
+  "sirens": [
+    {
+      "day": 1,
+      "at": 4300,
+      "duration": 40
+    },
+    {
+      "day": 1,
+      "at": 12400,
+      "duration": 40
+    },
+    {
+      "day": 2,
+      "at": 12400,
+      "duration": 40
+    },
+    {
+      "day": 3,
+      "at": 12400,
+      "duration": 40
+    },
+    {
+      "day": 4,
+      "at": 12800,
+      "duration": 40
+    },
+    {
+      "day": 5,
+      "at": 12400,
+      "duration": 40
+    },
+    {
+      "day": 6,
+      "at": 12400,
+      "duration": 40
+    },
+    {
+      "day": 7,
+      "at": 12400,
+      "duration": 40
+    },
+    {
+      "day": 8,
+      "at": 12400,
+      "duration": 40
+    },
+    {
+      "day": 9,
+      "at": 12400,
+      "duration": 40
+    },
+    {
+      "day": 5,
+      "at": 4200,
+      "duration": 40
+    },
+    {
+      "day": 6,
+      "at": 3000,
+      "duration": 40
+    }
+  ]
+}

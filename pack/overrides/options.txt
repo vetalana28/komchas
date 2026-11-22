@@ -1,0 +1,4 @@
+lang:ru_ru
+renderDistance:10
+gamma:0.0
+fancyGraphics:true

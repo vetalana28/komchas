@@ -1,0 +1,36 @@
+{
+  "once": true,
+  "lines": [
+    {
+      "speaker": "veta",
+      "text": "Где была?",
+      "kind": "say"
+    },
+    {
+      "speaker": "sonya",
+      "text": "У Дашки.",
+      "kind": "say"
+    },
+    {
+      "speaker": "veta",
+      "text": "У Дашки отключили связь, я звонила ей до вечера. Соня, я не лезу, просто...",
+      "kind": "say"
+    },
+    {
+      "speaker": "sonya",
+      "text": "Блин, Вет, не начинай.",
+      "kind": "say"
+    },
+    {
+      "speaker": "veta",
+      "text": "Я не начинаю. Я заканчиваю. Суп на плите.",
+      "kind": "say"
+    }
+  ],
+  "trigger": {
+    "day": 2,
+    "from": 11000,
+    "to": 12300,
+    "zone": "flat"
+  }
+}

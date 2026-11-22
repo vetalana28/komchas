@@ -1,0 +1,14 @@
+{
+  "siren": {
+    "subtitle": "subtitles.komchas.siren",
+    "sounds": [
+      { "name": "minecraft:event.raid.horn", "type": "event", "volume": 1.0, "pitch": 0.8 }
+    ]
+  },
+  "children_laugh": {
+    "subtitle": "subtitles.komchas.children_laugh",
+    "sounds": [
+      { "name": "minecraft:entity.villager.yes", "type": "event", "volume": 0.8, "pitch": 1.8 }
+    ]
+  }
+}

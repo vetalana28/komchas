@@ -1,0 +1,19 @@
+# Список модов для сборки: слаги Modrinth, по одному в строке. Строки с # пропускаются.
+# ВАЖНО: слаги и наличие версий под 1.20.1 Forge сверьте вручную (скрипт напишет, какие не нашлись).
+
+# --- Атмосфера и механики ---
+cold-sweat
+simple-voice-chat
+sound-physics-remastered
+
+# --- Анимации героинь ---
+player-animator
+not-enough-animations
+emotecraft
+
+# --- Производительность и визуал ---
+embeddium
+oculus
+ferrite-core
+modernfix
+entityculling

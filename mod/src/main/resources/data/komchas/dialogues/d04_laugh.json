@@ -1,0 +1,33 @@
+{
+  "once": true,
+  "lines": [
+    {
+      "speaker": "",
+      "text": "Сирена смолкла. Во дворе кто-то смеётся. Дети. Со всех сторон, чуть в разной тональности.",
+      "kind": "narrate"
+    },
+    {
+      "speaker": "veta",
+      "text": "Соня.",
+      "kind": "say",
+      "delay": 60
+    },
+    {
+      "speaker": "sonya",
+      "text": "Не подходи к окну.",
+      "kind": "say",
+      "delay": 80
+    },
+    {
+      "speaker": "",
+      "text": "Во дворе никого нет.",
+      "kind": "narrate"
+    }
+  ],
+  "trigger": {
+    "day": 4,
+    "from": 14000,
+    "to": 15500,
+    "zone": "flat"
+  }
+}

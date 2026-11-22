@@ -1,0 +1,80 @@
+{
+  "once": true,
+  "lines": [
+    {
+      "speaker": "",
+      "text": "Дошик, плед, чай. Вечер.",
+      "kind": "narrate"
+    },
+    {
+      "speaker": "sonya",
+      "text": "Если я ещё раз увижу дошик, я подам на него в суд.",
+      "kind": "say"
+    },
+    {
+      "speaker": "veta",
+      "text": "Гречка есть.",
+      "kind": "say"
+    },
+    {
+      "speaker": "sonya",
+      "text": "Гречка — это дошик для тех, у кого есть совесть.",
+      "kind": "say"
+    },
+    {
+      "speaker": "veta",
+      "text": "Хорошая формулировка. Бабушке перешлю.",
+      "kind": "say"
+    },
+    {
+      "speaker": "veta",
+      "text": "Как там у Серёжи дела?",
+      "kind": "say",
+      "delay": 110
+    },
+    {
+      "speaker": "sonya",
+      "text": "...........",
+      "kind": "say",
+      "delay": 100
+    },
+    {
+      "speaker": "sonya",
+      "text": "Отлично.",
+      "kind": "say",
+      "delay": 80
+    },
+    {
+      "speaker": "veta",
+      "text": "Вы же вроде поругались?",
+      "kind": "say"
+    },
+    {
+      "speaker": "sonya",
+      "text": "Не поругались. У него зачёты. Всё, я в душ. Там вода ледяная, так что пожелай мне удачи.",
+      "kind": "say"
+    },
+    {
+      "speaker": "veta",
+      "text": "Ни пуха!",
+      "kind": "say"
+    },
+    {
+      "speaker": "sonya",
+      "text": "К чёрту.",
+      "kind": "say"
+    },
+    {
+      "speaker": "veta",
+      "text": "Странно. Про зачёты она обычно говорит, что я «душная». А тут просто ответила.",
+      "kind": "think",
+      "delay": 130
+    }
+  ],
+  "trigger": {
+    "day": 1,
+    "from": 11000,
+    "to": 12300,
+    "zone": "flat"
+  }
+}

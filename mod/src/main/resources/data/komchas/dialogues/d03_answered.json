@@ -1,0 +1,27 @@
+{
+  "once": false,
+  "lines": [
+    {
+      "speaker": "veta",
+      "text": "Соня? Это ты?",
+      "kind": "say",
+      "delay": 40
+    },
+    {
+      "speaker": "",
+      "text": "Тишина. Потом шаг. Ещё шаг. Тень под дверью становится длиннее.",
+      "kind": "narrate"
+    },
+    {
+      "speaker": "ГОЛОС",
+      "text": "Это ты, Вет.",
+      "kind": "say"
+    },
+    {
+      "speaker": "veta",
+      "text": "Зачем я ответила. Зачем я ответила.",
+      "kind": "think",
+      "delay": 100
+    }
+  ]
+}

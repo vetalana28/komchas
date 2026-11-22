@@ -1,0 +1,9 @@
+lang:ru_ru
+renderDistance:10
+gamma:0.0
+fancyGraphics:true
+ao:true
+guiScale:3
+onboardAccessibility:false
+tutorialStep:none
+skipMultiplayerWarning:true

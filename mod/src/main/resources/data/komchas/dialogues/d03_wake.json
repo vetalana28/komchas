@@ -1,0 +1,27 @@
+{
+  "once": false,
+  "lines": [
+    {
+      "speaker": "sonya",
+      "text": "Что? Вет... что?",
+      "kind": "say",
+      "delay": 40
+    },
+    {
+      "speaker": "ГОЛОС",
+      "text": "Вет. Иди сюда.",
+      "kind": "say"
+    },
+    {
+      "speaker": "sonya",
+      "text": "Это не я.",
+      "kind": "say",
+      "delay": 60
+    },
+    {
+      "speaker": "veta",
+      "text": "Я знаю.",
+      "kind": "say"
+    }
+  ]
+}
