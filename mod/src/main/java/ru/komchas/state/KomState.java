@@ -19,6 +19,12 @@ public class KomState extends SavedData {
     public static final int MAX_DAY = 12;
 
     public boolean initialized = false;
+    /** Карта установлена и состояние сброшено под новый мир. */
+    public boolean mapReady = false;
+    /** Какие места для Тихих уже заняты (каждое создаётся один раз). */
+    public final Set<String> spawned = new HashSet<>();
+    /** Игроки, которых уже переносили в квартиру. */
+    public final Set<UUID> moved = new HashSet<>();
     public long lastDayIndex = 0;
     public int day = 1;
     /** Доверие между героинями, 0..100. */
@@ -68,6 +74,19 @@ public class KomState extends SavedData {
     @Override
     public CompoundTag save(CompoundTag tag) {
         tag.putBoolean("initialized", initialized);
+        tag.putBoolean("mapReady", mapReady);
+        ListTag spawnedTag = new ListTag();
+        for (String k : spawned) {
+            spawnedTag.add(StringTag.valueOf(k));
+        }
+        tag.put("spawned", spawnedTag);
+        ListTag movedTag = new ListTag();
+        for (UUID id : moved) {
+            CompoundTag t = new CompoundTag();
+            t.putUUID("id", id);
+            movedTag.add(t);
+        }
+        tag.put("moved", movedTag);
         tag.putLong("lastDayIndex", lastDayIndex);
         tag.putInt("day", day);
         tag.putInt("trust", trust);
@@ -98,6 +117,15 @@ public class KomState extends SavedData {
     public static KomState load(CompoundTag tag) {
         KomState s = new KomState();
         s.initialized = tag.getBoolean("initialized");
+        s.mapReady = tag.getBoolean("mapReady");
+        ListTag spawnedTag = tag.getList("spawned", Tag.TAG_STRING);
+        for (int i = 0; i < spawnedTag.size(); i++) {
+            s.spawned.add(spawnedTag.getString(i));
+        }
+        ListTag movedTag = tag.getList("moved", Tag.TAG_COMPOUND);
+        for (int i = 0; i < movedTag.size(); i++) {
+            s.moved.add(movedTag.getCompound(i).getUUID("id"));
+        }
         s.lastDayIndex = tag.getLong("lastDayIndex");
         s.day = Math.max(1, Math.min(MAX_DAY, tag.getInt("day")));
         s.trust = tag.contains("trust") ? tag.getInt("trust") : 50;

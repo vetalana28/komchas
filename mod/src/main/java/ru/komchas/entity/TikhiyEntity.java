@@ -23,6 +23,7 @@ public class TikhiyEntity extends PathfinderMob {
         super(type, level);
         this.setPersistenceRequired();
         this.setInvulnerable(true);
+        this.setNoAi(true);
     }
 
     public static AttributeSupplier.Builder createAttributes() {
@@ -34,7 +35,7 @@ public class TikhiyEntity extends PathfinderMob {
     @Override
     public void tick() {
         super.tick();
-        if (this.level().isClientSide) {
+        if (this.level().isClientSide || this.tickCount % 5 != 0) {
             return;
         }
         Player nearest = this.level().getNearestPlayer(this, WATCH_RANGE);

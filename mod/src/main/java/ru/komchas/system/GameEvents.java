@@ -8,6 +8,8 @@ import net.minecraft.world.level.Level;
 import net.minecraftforge.event.AddReloadListenerEvent;
 import net.minecraftforge.event.RegisterCommandsEvent;
 import net.minecraftforge.event.TickEvent;
+import net.minecraftforge.event.server.ServerAboutToStartEvent;
+import net.minecraftforge.event.server.ServerStartedEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -26,6 +28,17 @@ public class GameEvents {
             "20 декабря", "22 декабря", "24 декабря", "25 декабря",
             "26 декабря", "28 декабря", "30 декабря", "31 декабря"
     };
+
+    /** Карта кладётся в папку мира до того, как игра начнёт его загружать. */
+    @SubscribeEvent
+    public void onAboutToStart(ServerAboutToStartEvent event) {
+        MapInstaller.installFiles(event.getServer());
+    }
+
+    @SubscribeEvent
+    public void onStarted(ServerStartedEvent event) {
+        MapInstaller.setupWorld(event.getServer());
+    }
 
     @SubscribeEvent
     public void onReload(AddReloadListenerEvent event) {
@@ -72,6 +85,7 @@ public class GameEvents {
             return;
         }
         KomState st = KomState.get(server);
+        MapInstaller.moveToFlat(server, player, st);
         if (st.roles.containsKey(player.getUUID())) {
             return;
         }
